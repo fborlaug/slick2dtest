@@ -4,7 +4,7 @@ import org.newdawn.slick._
 import com.typesafe.scalalogging.slf4j.Logging
 
 case class ImagesTest(name: String) extends BasicGame(name) {
-  var img : Image = null
+  private var img : Image = null
 
   def init(gc: GameContainer) {
     img = new Image("dices.png")
